@@ -1,21 +1,36 @@
+<!--Welcome section with an id of welcome-section
+The welcome section should have an h1 element that contains text
+
+Your portfolio should have a projects section with an id of projects
+
+The projects section should contain at least one element with a class of project-tile to hold a project
+The projects section should contain at least one link to a project
+Your portfolio should have a navbar with an id of navbar
+The navbar should contain at least one link that you can click on to navigate to different sections of the page
+Your portfolio should have a link with an id of profile-link, which opens your GitHub or freeCodeCamp profile in a new tab
+Your portfolio should have at least one media query
+The height of the welcome section should be equal to the height of the viewport
+The navbar should always be at the top of the viewport-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
-        <div class="logo"></div>
+        <div class="logo"><i class="fa-solid fa-l"></i><h6>Liberius</h6></div>
         <div class="navigation">
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
+                    <li href="#Home">Home</li>
+                    <li href="#About">About</li>
+                    <li href="#Services">Services</li>
+                    <li href="#Projects">Portfolio</li>
+                    <li href="#Contact">Contact</li>
                 </ul>
             </nav>
         </div>
@@ -23,5 +38,22 @@
             <button class="contact-button">Contact</button>
         </div>
     </header>
+    <main>
+        <div id="Home">
+            <section id="welcome-section">
+                <div class="introduction">
+                    <h1>I'm Scaur<br> Codewizo</h1>
+                    <p>I have built this diverse portfolio to showcase my technical expertise and
+                    problem solving skills through various web development projects and user interface design
+                    which have given me a versatile skill set.
+                    </p>
+                    <button class="learn-button">Learn More</button>
+                </div>
+                <div class="image">
+                    <img class="intro-image" src="assets/images/portfolio-image.jpg" alt="">
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

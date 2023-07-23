@@ -1,0 +1,106 @@
+/* General CSS all media */
+* {
+    font-family: inherit;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+
+/* Home section CSS */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h6 {
+    margin-top: 10px;
+    padding-top: 8px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px;
+    margin: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: rgb(233, 121, 121);
+}
+
+.contact-button {
+    border: none;
+    background-color: rgb(150, 85, 85);
+    color: black;
+    padding: 8px;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 24px;
+    margin: 10px;
+    width: 100px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contact-button:hover {
+    transform: scale(1.1);
+}
+
+#welcome-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.introduction {
+    padding-top: 200px;
+}
+
+.introduction p {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 24px 0px;
+}
+
+.introduction h1 {
+    font-size: 56px;
+}
+
+.intro-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.learn-button {
+    border: none;
+    background-color: rgb(150, 85, 85);
+    color: black;
+    padding: 12px;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.learn-button:hover {
+    background-color: black;
+    color: white;
+}
