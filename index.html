@@ -1,16 +1,12 @@
-<!--Welcome section with an id of welcome-section
+<!--
 The welcome section should have an h1 element that contains text
 
 Your portfolio should have a projects section with an id of projects
 
 The projects section should contain at least one element with a class of project-tile to hold a project
 The projects section should contain at least one link to a project
-Your portfolio should have a navbar with an id of navbar
-The navbar should contain at least one link that you can click on to navigate to different sections of the page
 Your portfolio should have a link with an id of profile-link, which opens your GitHub or freeCodeCamp profile in a new tab
-Your portfolio should have at least one media query
-The height of the welcome section should be equal to the height of the viewport
-The navbar should always be at the top of the viewport-->
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,38 +18,53 @@ The navbar should always be at the top of the viewport-->
 </head>
 <body>
     <header>
-        <div class="logo"><i class="fa-solid fa-l"></i><h6>Liberius</h6></div>
+        <div class="logo"><i class="fa-solid fa-l"></i><h6>Libe<span class="logo-span">rius</span></h6></div>
         <div class="navigation">
-            <nav>
+            <nav id="navbar">
                 <ul>
-                    <li href="#Home">Home</li>
-                    <li href="#About">About</li>
-                    <li href="#Services">Services</li>
-                    <li href="#Projects">Portfolio</li>
-                    <li href="#Contact">Contact</li>
+                    <a href="#welcome-section"><li>Home</li></a>
+                    <a href="#About"><li>About</li></a>
+                    <a href="#Services"><li>Services</li></a>
+                    <a href="#Projects"><li>Portfolio</li></a>
+                    <a href="#Contact"><li>Contact</li></a>
                 </ul>
             </nav>
         </div>
-        <div class="hire">
-            <button class="contact-button">Contact</button>
-        </div>
+        <a id="profile-link" href="#"><button class="contact-button">Profile</button></a>
     </header>
     <main>
-        <div id="Home">
-            <section id="welcome-section">
-                <div class="introduction">
-                    <h1>I'm Scaur<br> Codewizo</h1>
-                    <p>I have built this diverse portfolio to showcase my technical expertise and
-                    problem solving skills through various web development projects and user interface design
-                    which have given me a versatile skill set.
+        <section id="welcome-section">
+            <div class="introduction">
+                <h1>I'm Scaur<br> Codewizo</h1>
+                <p>I have built this diverse portfolio to showcase my technical expertise and
+                problem solving skills through various web development projects and user interface design
+                which have given me a versatile skill set.
+                </p>
+                <button class="learn-button">Download CV</button>
+            </div>
+            <div class="image">
+                <img class="intro-image" src="assets/images/portfolio-image.jpg" alt="">
+            </div>
+        </section>
+        <section id="About" class="tab">
+            <h1>ABOUT<hr></h1>
+            <div class="about-container">
+                <div>
+                    <h3>Experienced Technologist<br> with a Diverse Skillset</h3>
+                    <p class="about-p">
+                        My mission as a front-end developer is to provide our customers with the highest quality
+                        websites that will stand the test of time. I am committed
+                        to offering a wide range of products that are not only functional, but also 
+                        aesthetically pleasing to enhance user experience and smooth internet browsing.
+                        With unparalleled customer service, I strive to exceed client's expectations 
+                        and make your experience a memorable one by buiding quality websites.
                     </p>
-                    <button class="learn-button">Learn More</button>
                 </div>
-                <div class="image">
-                    <img class="intro-image" src="assets/images/portfolio-image.jpg" alt="">
+                <div class="image-div">
+                <img class="about-image" src="assets/images/person-coding.jpg" alt="Programming Person">
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
