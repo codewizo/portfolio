@@ -1,4 +1,10 @@
 /* General CSS all media */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
 * {
     font-family: inherit;
     font-size: 18px;
@@ -7,151 +13,210 @@
     padding: 0;
 }
 
-main {
-    margin: 0 10%;
-}
+@media screen {
+
+    main {
+        margin: 0 10%;
+    }
 
 
-/* Home section CSS */
-header {
-    background-color: rgb(112, 103, 103);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-}
+    /* Home section CSS */
+    header {
+        background-color: rgb(112, 103, 103);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+    }
 
-#welcome-section {
-    padding-top: 60px;
-    padding-bottom: 100px;
-}
+    #welcome-section {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
 
-h6 {
-    font-size: 24px;
-    margin-top: 10px;
-    padding-top: 8px;
-}
+    h6 {
+        font-size: 24px;
+        margin-top: 10px;
+        padding-top: 8px;
+    }
 
-.logo-span {
-    font-size: 24px;
-    color: rgb(95, 54, 4);
-}
+    .logo {
+        padding-left: 24px;
+    }
 
-nav ul {
-    margin: 0;
-}
+    .logo-span {
+        font-size: 24px;
+        color: rgb(95, 54, 4);
+    }
 
-nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 8px;
-    margin: 10px;
-    transition: .5s;
-    cursor: pointer;
-}
+    nav ul {
+        margin: 0;
+    }
 
-nav ul li:hover {
-    color: rgb(241, 64, 64);
-}
+    nav ul li {
+        display: inline-block;
+        list-style-type: none;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 8px;
+        margin: 10px;
+        transition: .5s;
+        cursor: pointer;
+    }
 
-.contact-button {
-    border: none;
-    background-color: rgb(150, 85, 85);
-    color: black;
-    padding: 8px;
-    width: fit-content;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 24px;
-    margin: 10px 40px;
-    width: 100px;
-    cursor: pointer;
-    transition: .5s;
-}
+    nav ul li:hover {
+        color: rgb(241, 64, 64);
+    }
 
-.contact-button:hover {
-    transform: scale(1.1);
-}
+    .contact-button {
+        border: none;
+        background-color: rgb(150, 85, 85);
+        color: black;
+        padding: 8px;
+        width: fit-content;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 24px;
+        margin: 10px 40px;
+        width: 100px;
+        cursor: pointer;
+        transition: .5s;
+    }
 
-#welcome-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
-}
+    .contact-button:hover {
+        transform: scale(1.1);
+    }
 
-.introduction {
-    padding-top: 200px;
-}
+    #welcome-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
 
-.introduction p {
-    font-size: 22px;
-    font-weight: 400;
-    padding: 24px 0px;
-}
+    .introduction {
+        padding-top: 200px;
+    }
 
-.introduction h1 {
-    font-size: 56px;
-}
+    .introduction p {
+        font-size: 22px;
+        font-weight: 400;
+        padding: 24px 0px;
+    }
 
-.intro-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
+    .introduction h1 {
+        font-size: 56px;
+    }
 
-.learn-button {
-    font-family: sans-serif;
-    border: 2px solid black;
-    background-color: rgb(150, 85, 85);
-    color: black;
-    padding: 8px;
-    width: fit-content;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: .5s;
-}
+    .intro-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
 
-.learn-button:hover {
-    background-color: black;
-    color: white;
-}
+    .learn-button {
+        font-family: sans-serif;
+        border: 2px solid black;
+        background-color: rgb(150, 85, 85);
+        color: black;
+        padding: 8px;
+        width: fit-content;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: .5s;
+    }
 
-/* About section CSS */
+    .learn-button:hover {
+        background-color: black;
+        color: white;
+    }
 
-.about-container{
-    display: grid;
-    grid-template-columns: 1.75fr 1fr;
-    column-gap: 50px;
-    padding: 60px 0px;
-}
-#About h1 {
-    font-size: 40px;
-    text-align: center;
-}
-#About h1 hr{
-    margin: auto;
-    width: 250px;
-    height: 1px;
-    background-color: brown;
-}
-#About h3 {
-    font-size: 32px;
-}
-.about-image{
-    height: 100%;
-    width:100%;
-}
-.about-p{
-    font-size: 20px;
-    font-weight: 500;
-    padding: 32px 0px;
-}
-.image-div {
-    border: 8px solid brown;
-    border-radius: 8px;
+    /* About section CSS */
+
+    .about-container{
+        display: grid;
+        grid-template-columns: 1.75fr 1fr;
+        height: 60vh;
+        column-gap: 50px;
+        padding: 60px 0px;
+    }
+    #About {
+        margin-top: 60px;
+        padding-bottom: 100px;
+    }
+    #About h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    #About h1 hr{
+        margin: auto;
+        width: 250px;
+        height: 1px;
+        background-color: brown;
+    }
+    #About h3 {
+        font-size: 32px;
+    }
+    .about-image{
+        height: 100%;
+        width:100%;
+    }
+    .about-p{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 32px 0px;
+    }
+    .image-div {
+        border: 8px solid brown;
+        border-radius: 8px;
+    }
+
+    .skills-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        padding: 60px 0px;
+    }
+
+    .skill {
+        background-color: rgb(187, 181, 181);
+        padding: 24px;
+        border-radius: 8px;
+    }
+
+    .skill h3 {
+        font-size: 24px;
+    }
+
+    .skill p {
+        font-size: 20px;
+    }
+
+    #Skills h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #Skills h1 hr{
+        margin: auto;
+        width: 250px;
+        height: 1px;
+        background-color: brown;
+    }
+
+    #projects h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    #projects h1 hr{
+        margin: auto;
+        width: 250px;
+        height: 1px;
+        background-color: brown;
+    }
+    .project h3 {
+        font-size: 18px;
+    }
 }

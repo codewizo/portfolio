@@ -1,5 +1,4 @@
 <!--
-The welcome section should have an h1 element that contains text
 
 Your portfolio should have a projects section with an id of projects
 
@@ -18,19 +17,19 @@ Your portfolio should have a link with an id of profile-link, which opens your G
 </head>
 <body>
     <header>
-        <div class="logo"><i class="fa-solid fa-l"></i><h6>Libe<span class="logo-span">rius</span></h6></div>
+        <div class="logo"><i class="fa-solid fa-l"></i><h6>Mr.<span class="logo-span">Aram</span></h6></div>
         <div class="navigation">
             <nav id="navbar">
                 <ul>
                     <a href="#welcome-section"><li>Home</li></a>
                     <a href="#About"><li>About</li></a>
-                    <a href="#Services"><li>Services</li></a>
-                    <a href="#Projects"><li>Portfolio</li></a>
+                    <a href="#Skills"><li>Skills</li></a>
+                    <a href="#projects"><li>Portfolio</li></a>
                     <a href="#Contact"><li>Contact</li></a>
                 </ul>
             </nav>
         </div>
-        <a id="profile-link" href="#"><button class="contact-button">Profile</button></a>
+        <a id="profile-link" target="_blank" href="https://github.com/codewizo"><button class="contact-button">Profile</button></a>
     </header>
     <main>
         <section id="welcome-section">
@@ -46,7 +45,7 @@ Your portfolio should have a link with an id of profile-link, which opens your G
                 <img class="intro-image" src="assets/images/portfolio-image.jpg" alt="">
             </div>
         </section>
-        <section id="About" class="tab">
+        <section id="About">
             <h1>ABOUT<hr></h1>
             <div class="about-container">
                 <div>
@@ -62,6 +61,45 @@ Your portfolio should have a link with an id of profile-link, which opens your G
                 </div>
                 <div class="image-div">
                 <img class="about-image" src="assets/images/person-coding.jpg" alt="Programming Person">
+                </div>
+            </div>
+        </section>
+        <section id="Skills">
+            <h1>SKILLS<hr></h1>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Front-End Development</h3>
+                    <p>Front-end development is the practice of creating the user-facing aspects of a website or application. 
+                    Utilizing HTML, CSS, and JavaScript, front-end developers are responsible for designing and implementing 
+                    the visual and interactive elements that users interact with.</p>
+                </div>
+                <div class="skill">
+                    <h3>UI/UX design</h3>
+                    <p>UI/UX Design is the art of creating visually appealing and user-friendly interfaces for 
+                    digital products. With a focus on user experience, this skill involves understanding user
+                    needs, conducting user research, and designing intuitive interfaces that enhance
+                    usability and satisfaction.
+                    </p>
+                </div>
+                <div class="skill">
+                    <h3>Critical Thinking</h3>
+                    <p>Critical thinking is the ability to analyze and evaluate information, ideas, 
+                    and arguments in a logical and objective manner. It involves questioning assumptions, 
+                    considering multiple perspectives, and making well-reasoned decisions based on evidence and sound reasoning.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1>PORTFOLIO<hr></h1>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>RockPaperScissors GAME</h3>
+                </div>
+                <div class="project">
+                    <h3>Shopping Website</h3>
+                </div>
+                <div class="project">
+                    <h3>Simple Calculator</h3>
                 </div>
             </div>
         </section>
