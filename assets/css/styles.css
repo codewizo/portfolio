@@ -519,6 +519,7 @@ section {
         border-radius: 8px;
         cursor: pointer;
         transition: .5s;
+        margin-bottom: 16px;
     }
 
     .learn-button:hover {
