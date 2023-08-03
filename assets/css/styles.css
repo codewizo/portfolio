@@ -17,7 +17,7 @@ section {
     padding-top: 60px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1840px) {
 
     main {
         margin: 0 10%;
@@ -338,7 +338,7 @@ section {
     }
     #About {
         padding-bottom: 20px;
-        margin-bottom: 32px;
+        margin-bottom: 75px;
     }
     #About h1 {
         font-size: 40px;
@@ -534,7 +534,7 @@ section {
     }
     #About {
         padding-bottom: 20px;
-        margin-bottom: 32px;
+        margin-bottom: 75px;
     }
     #About h1 {
         font-size: 40px;
