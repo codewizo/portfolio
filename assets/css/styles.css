@@ -320,7 +320,7 @@ nav ul {
 
 /* RESPONSIVE DESIGN FOR SMALLER DEVICES */
 
-@media (max-width: 576px) {   
+@media screen and (max-width: 576px) {   
     main {
         margin: 0 8%;       /* Margin Reduction */
     }
@@ -403,7 +403,7 @@ nav ul {
     }
 
     .introduction {
-        padding-top: 30px;
+        padding-top: 20px;
     }
 
     .introduction p {
