@@ -25,6 +25,10 @@ h1 > hr {
     background-color: brown;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
     margin: 0 10%;
 }
@@ -342,8 +346,8 @@ nav ul {
 
     .logo-text {
         font-size: 24px;
-        margin-top: 10px;
-        padding-top: 8px;
+        margin-top: 0;
+        padding-bottom: 8px;
     }
 
     .logo {
@@ -357,9 +361,10 @@ nav ul {
 
     nav ul {
         margin: 0;
+        transition: all 1s ease; 
     }
 
-    #navbar ul li {
+    #navbar ul li{
         display: none;   /* Display change */
         text-align: center;  /* Center Links */
         text-decoration: none;
@@ -584,8 +589,8 @@ nav ul {
     }
 
     .see-button {
-        /*position: absolute;
-        left: 50%; */    
+        position: absolute;
+        left: 40%;  
         margin: 32px auto; /* Align button at the center */
         width: fit-content;
         padding: 10px;
