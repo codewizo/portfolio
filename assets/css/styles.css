@@ -551,21 +551,6 @@ nav ul {
         border-radius: 10px;
     }
 
-    .rock {
-        background-image: url(/assets/images/rockpaperscissors.jpg);
-        background-size: cover;
-    }
-
-    .shop {
-        background-image: url(/assets/images/shopping-pic.jpg);
-        background-size: cover;
-    }
-
-    .calc {
-        background-image: url(/assets/images/calculator.jpg);
-        background-size: cover;
-    }
-
     .project button{
         width: 60%;
         font-size: 18px;
