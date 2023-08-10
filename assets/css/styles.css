@@ -410,6 +410,7 @@ nav ul {
     }
 
     .dropdown-menu {
+        position: fixed;
         display: none;
         justify-content: center;
         width: 200px;
