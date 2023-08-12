@@ -1,12 +1,18 @@
-//const bar = document.getElementsByClassName("bar");
+const bar = document.getElementsByClassName("bar");
+const menu = document.querySelector(".dropdown-menu");
 //const navigation = document.getElementsByClassName("dropdown-menu");
 function show(){
-    document.querySelector(".dropdown-menu").style.display = "flex";
-    document.querySelector(".dropdown-menu").style.transition = "all 0.5s ease";
-    setTimeout(hide, 4000);
+    menu.style.display = "flex";
 }
 function hide(){
-    document.querySelector(".dropdown-menu").style.display = "none";
+    menu.style.display = "none";
 }
+if (menu.style.display = "flex"){
+    bar.onclick = menu.style.display = "none";
+}
+else {
+    menu.style.display = "flex";
+}
+bar.onclick = menu.style.display = "flex";
 
 
