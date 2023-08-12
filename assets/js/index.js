@@ -1,4 +1,4 @@
-const bar = document.getElementsByClassName("bar");
+const bar = document.getElementById("nav-toggler");
 const menu = document.querySelector(".dropdown-menu");
 //const navigation = document.getElementsByClassName("dropdown-menu");
 function show(){
