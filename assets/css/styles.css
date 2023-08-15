@@ -579,6 +579,13 @@ nav ul {
         row-gap: 32px;      /* From column  gap to row gap */
     }
 
+    .project {
+        width: 80%;
+        height: 500px;
+        background-color: rgb(182, 160, 160);
+        border-radius: 16px;
+    }
+
     #projects h1 {
         font-size: 40px;
         text-align: center;
@@ -843,6 +850,13 @@ nav ul {
         display: grid;
         grid-template-columns: 1fr;      /* One column creation */
         row-gap: 32px;      /* From column  gap to row gap */
+    }
+
+    .project {
+        width: 80%;
+        height: 500px;
+        background-color: rgb(182, 160, 160);
+        border-radius: 16px;
     }
 
     #projects h1 {
