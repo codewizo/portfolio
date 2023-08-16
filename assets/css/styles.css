@@ -68,7 +68,7 @@ nav ul {
     font-size: 22px;
     font-weight: 600;
     padding: 8px;
-    margin: 10px;
+    margin: 0px;/* Margin 10px removal */
     transition: .5s;
     cursor: pointer;
 }
